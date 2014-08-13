@@ -5,6 +5,10 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:tcombs/coh2014.git"
+    },
   "dependencies": {
     "express": "~4.2.0",
     "static-favicon": "~1.0.0",
