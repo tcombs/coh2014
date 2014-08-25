@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Coh 2014' });
+  var google = "https://docs.google.com/forms/d/14lxQyQls7jYzAktg1f7U6XiRein6GypkOpl_bK5P-Bs/viewform?usp=send_form";
+  res.redirect(google);
 });
 
 module.exports = router;
