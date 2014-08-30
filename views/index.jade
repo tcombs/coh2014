@@ -1,5 +1,106 @@
-extends layout
+doctype html
+html(lang="en")
+    head
+        title= "COH 2014"
 
-block content
-  h1= title
-  p Welcome to #{title}
+        link(href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css', rel='stylesheet')
+        link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet')
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600',rel='',type='text/css')
+        link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',rel='',type='text/css')
+        link(href='//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/lumen/bootstrap.min.css',rel='stylesheet')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        #container
+            #navbar
+            #body-container
+                div.block
+                   div.site-header
+                        h1 CONVERSATIONS of HOPE 2014
+                        h2 Living in Color
+                        h4 Presented By:
+                        a(href='http://okeatingdisorders.org',target="_blank")
+                            img(src='/images/logos/OEDA_V3.jpg')
+                       div.center
+                            a.btn.btn-success.rgst-btn(href='https://docs.google.com/forms/d/14lxQyQls7jYzAktg1f7U6XiRein6GypkOpl_bK5P-Bs/viewform?usp=send_form',target="_blank") Register Now ... it's free!
+                div.block.green
+                    div.header
+                        h1 When Is It?
+                        h3 9/19/14 6:30 - 9:30
+                        #countdown
+                            h2#clock
+
+                div.block.yellow
+                    div.header
+                        h1 What's It All About?
+                    #coh-about.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conversations of Hope is one of OEDA’s biggest events of the year. Come enjoy this evening with speakers, music, dinner, and the spirit of hope as our community comes together to raise eating disorder awareness and prevention. Our theme this year is Living in Color. We will also be bringing back the “Tree of Hope” that you can decorate with your own personal ornament in dedication of a loved one who is either in treatment, in recovery, or has passed away from an eating disorder.
+
+                div.block.blue
+                    div.header
+                        h1 Where Is It?
+
+                        #location-text.
+                                Oklahoma Museum of History <br>
+                                800 Nazih Zuhdi Drive <br>
+                                Oklahoma City, Oklahoma 73105 <br>
+                                http://www.okhistory.org/historycenter/
+                        #map_canvas
+
+                div.block.purple
+                    div.header
+                        h1 Featuring
+                        h2 Johanna Kandel
+                        img.speaker-img(src='/images/Kandel_photo.jpg')
+                        h4 Founder / CEO of The Alliance for Eating Disorders Awareness and author of Life Beyond Your Eating Disorder
+                    #SpeakerInfo.
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Johanna Kandel is the founder and CEO of The Alliance for Eating Disorders Awareness
+                                                        and author of Life Beyond Your Eating Disorder (Harlequin). Since founding The Alliance in
+                                                        October 2000, Johanna has brought information and awareness about eating disorders to more
+                                                        than 200,000 individuals nationally and internationally. In addition, she facilitates weekly
+                                                        support groups, mentors individuals with eating disorders and their families through their
+                                                        treatment and recovery, helps thousands of people to gain information and find the help they
+                                                        need, and advocates for legislation on a state and national level.
+                                                        She is a Special Consultant to The Renfrew Center Foundation, the current President of the
+                                                        Board of Directors for the Eating Disorders Coalition, a founding board member of the Eating
+                                                        Disorders Activist Network, and Expert Advisory Committee member for Girl Future. She is an
+                                                        active participant in National Eating Disorders Awareness Week, and has received many awards
+                                                        for her ongoing outreach and advocacy work, including the Jefferson Award for Public Service©
+                                                        and Harlequin Enterprises’ More Than Words Award. Johanna has appeared on national
+                                                        television programs including NBC Nightly News and The Today Show, and has been profiled
+                                                        in the New York Times and Glamour Magazine.
+                     div.center
+                        a.btn.btn-primary(href='http://www.allianceforeatingdisorders.com/portal/',target="_blank") More Info
+                div.block.red
+                    div.header
+                        h1 Look! It's Fun!
+                    #slides
+                        img(src='/images/past_events/Bermudez.jpg')
+                        img(src='/images/past_events/coh2013.jpg')
+                        img(src='/images/past_events/coh-1.jpg')
+                        img(src='/images/past_events/OKHealthFair.jpg')
+                        img(src='/images/past_events/Walk.png')
+                        img(src='/images/past_events/Walk2.png')
+                        img(src='/images/past_events/Walk3.png')
+
+                div.block
+                    div.header
+                        h1 Sponsored By
+                    #sponsor
+                        a(href='http://www.saintfrancis.com/laureate-psychiatric-clinic/eatingdisorders/Pages/default.aspx',target="_blank")
+                            img(src='/images/logos/LaureateEatingDisorderslogo-2.jpg')
+                        a(href='http://www.quibids.com/en/',target="_blank")
+                            img(src='/images/logos/QuiBidsLogo-2.jpg')
+                        a(href='http://www.timberlineknolls.com/',target="_blank")
+                            img(src='/images/logos/TimberlineKnolls.jpeg')
+                div.block.orange
+                    div.header
+                        h1 Questions?
+                        h3 Contact us by email&nbsp;
+                            span.email coh@okeatingdisorders.org
+
+            div.code-block
+        script(src='//code.jquery.com/jquery-1.11.1.min.js')
+        script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+        script(src='https://maps.googleapis.com/maps/api/js')
+        script(src='/javascripts/jquery.countdown.min.js')
+        script(src='/javascripts/coh.js')
